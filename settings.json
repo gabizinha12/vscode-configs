@@ -1,77 +1,60 @@
 {
-    "git.autofetch": true,
-    "workbench.colorTheme":"Dracula",
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "icons-carbon",
 
-  // Configura tamanho e família da fonte
-  "editor.fontSize":16,
-  "editor.lineHeight":24,
-  "editor.fontFamily":"Fira Code",
-  "editor.fontLigatures":true,
-
-  // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
-  "editor.rulers": [
-    80,
-    120
-  ],
-
-  // Aplica um sinal visual na esquerda da linha selecionada
-  "editor.renderLineHighlight":"gutter",
-
-  // Aumenta a fonte do terminal
-  "terminal.integrated.fontSize":14,
-
-  // Define o tema dos ícones na sidebar
-  "workbench.iconTheme":"material-icon-theme",
-    "editor.suggestSelection": "first",
-    "explorer.compactFolders": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "[json]": {
-        "editor.formatOnSave": true,
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-      },
-    "terminal.integrated.fontFamily": "Fira Code",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.ignoreWindowsGit27Warning": true,
     "liveServer.settings.donotShowInfoMsg": true,
-    "launch": {
-        "configurations": [],
-        "compounds": []
+    "[json]": {
+    
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
     },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.suggestSelection": "first",
+    "editor.rulers": [80,120],
+    "editor.tabSize": 2,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.lineHeight": 26,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 16,
+    "editor.renderLineHighlight": "gutter",
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
     },
-    "notebook.kernelProviderAssociations": [],
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "dart.checkForSdkUpdates": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "breadcrumbs.enabled": true,
+    "editor.parameterHints.enabled": true,
+    "editor.codeActionsOnSave":  true,
+    "eslint.validate": [
+        {
+            "language": "javascript",
+            "autoFix": true,
+        },
+        {
+            "language": "javascriptreact",
+            "autoFix": true,
+        },
+        {
+            "language": "typescript",
+            "autoFix": true,
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true,
+        },        
+    ],
     "[javascript]": {
-
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "code-runner.saveAllFilesBeforeRun": true,
-    "code-runner.runInTerminal": true,
-    "eslint.migration.2_x": "off",
-    "terminal.integrated.env.linux": {},
-    "workbench.productIconTheme": "fluent-icons",
-    "gitlens.advanced.messages": {
-        "suppressImproperWorkspaceCasingWarning": true
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "yaml.schemas": {
-        "file:///c%3A/Users/Gabrielle%20Lima/.vscode/extensions/atlassian.atlascode-2.8.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
-    "go.alternateTools": {
-    "go": "go"
-    },
-    "explorer.confirmDelete": false,
-    "go.toolsManagement.autoUpdate": true,
-    "elixir.credo.lintEverything": true,
-    "elixir.credo.ignoreWarningMessages": true,
-    "elixir.credo.strictMode": true,
-    "elixirLS.suggestSpecs": false,
-    "workbench.startupEditor": "none"
+    "json.schemas": [
+    
+    ]
 }
